@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/comments/<%-comment.id%>?_method=PATCH" method="POST">
+        <input type="text" name="author" placeholder="Name" value="<%-comment.author%>">
+        <textarea name="comment" id="" cols="30" rows="10" placeholder="enter a new Comment"><%-comment.comment%></textarea>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
